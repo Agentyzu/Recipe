@@ -83,7 +83,7 @@ python main.py
 
 *   **C2MR Dataset:** The Chinese Cross-Modal Recipes dataset contains 32,072 meticulously curated image-recipe pairs with expert-vetted annotations. Due to the large file size of the images in the C2MR dataset, we provide links instead of including the images directly.
 *   **Zero-Hallucination Frontier:** By setting the refinement threshold $\tau = 0.75$ and sampling paths $N = 5$, Recipe achieves state-of-the-art precision (>93.5%).
-*   **Hyperparameters:** All critical parameters (LoRA rank, scaling factor, entropy normalization) are documented in `src/config.py` and the paper appendix.
+*   **Hyperparameters:** All critical parameters (LoRA rank, scaling factor, entropy normalization) are documented in the paper appendix.
 
 ## 🖋️ Citation
 
@@ -93,7 +93,7 @@ If you use Recipe or the C2MR dataset in your research, please cite:
 @inproceedings{recipe2026,
   title={Closing the Visual-Culinary Gap: Towards Hallucination-Free Recipe Generation with Entropy-Aware Logic Constraints},
   author={Anonymous Author(s)},
-  booktitle={Proceedings of the 34th ACM International Conference on Multimedia (ACM MM)},
+  booktitle={Under Review},
   year={2026}
 }
 ```
