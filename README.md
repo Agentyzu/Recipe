@@ -59,19 +59,13 @@ The implementation is optimized for **NVIDIA RTX 4090 / A100 GPUs** running **Ub
 
 ## 🚀 Usage
 
-### 1. Data Partitioning
-Partition the raw `C2MR.json` into academic splits:
-```bash
-python split_dataset.py
-```
-
-### 2. Knowledge Injection (LoRA Training)
+### 1. LoRA Training
 Fine-tune the backbone MLLM (Qwen-VL) on the training set:
 ```bash
 python train_lora.py
 ```
 
-### 3. Hallucination-Free Inference
+### 2. Hallucination-Free Inference
 Execute the RECIPE framework on the test set to generate recipes and evaluate performance:
 ```bash
 python main.py
