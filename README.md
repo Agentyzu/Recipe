@@ -1,6 +1,6 @@
 # **Rᴇᴄɪᴘᴇ**: Towards Hallucination-Free Recipe Generation with Entropy-Aware Logic Constraints
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Python](https://img.shields.io/badge/Python-3.10+-green) ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange)
+[ ![Python](https://img.shields.io/badge/Python-3.10+-green) ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange)
 
 This repository contains the official implementation of the paper **"Closing the Visual-Culinary Gap: Towards Hallucination-Free Recipe Generation with Entropy-Aware Logic Constraints"**, submitted to **ACM MM 2026**.
 
