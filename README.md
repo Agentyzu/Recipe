@@ -9,7 +9,7 @@ This repository contains the official implementation of the paper **"Closing the
 **Rᴇᴄɪᴘᴇ** (REtrieval-constrained Culinary Inference via Probabilistic Entropy) reformulates multimodal recipe generation from a probabilistic guessing task into a **verifiable logical reasoning** task. By quantifying epistemic uncertainty (entropy) via stochastic sampling, Rᴇᴄɪᴘᴇ effectively identifies and excises bias-driven "stubborn hallucinations."
 
 <div align="center">
- <img src="Recipe_framework.png" alt="Recipe Architecture" width="800"/>
+ <img src="recipe_framework.png" alt="Recipe Architecture" width="800"/>
 </div>
 
 ### Key Features
