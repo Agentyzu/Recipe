@@ -1,6 +1,6 @@
 # **Rᴇᴄɪᴘᴇ**: Towards Hallucination-Free Recipe Generation with Entropy-Aware Logic Constraints
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Python](https://img.shields.io/badge/Python-3.10+) ![PyTorch](https://img.shields.io/badge/PyTorch-2.1+)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Python](https://img.shields.io/badge/Python-3.10+-green) ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange)
 
 This repository contains the official implementation of the paper **"Closing the Visual-Culinary Gap: Towards Hallucination-Free Recipe Generation with Entropy-Aware Logic Constraints"**, submitted to **ACM MM 2026**.
 
@@ -23,7 +23,8 @@ This repository contains the official implementation of the paper **"Closing the
 ```text
 .
 ├── data/                           # Dataset directory
-│   ├── C2MR_train.json             # Expert-vetted Training set (25,657 pairs)
+│   ├── C2MR.json                   # Expert-vetted set (32072, pairs)
+│   ├── C2MR_train.json             # Training set
 │   ├── C2MR_val.json               # Validation set for LoRA monitoring
 │   └── C2MR_test.json              # Test set for zero-hallucination evaluation
 ├── image_cache/                    # Cached images downloaded from URLs
@@ -59,19 +60,13 @@ The implementation is optimized for **NVIDIA RTX 4090 / A100 GPUs** running **Ub
 
 ## 🚀 Usage
 
-### 1. Data Partitioning
-Partition the raw `C2MR.json` into academic splits:
-```bash
-python split_dataset.py
-```
-
-### 2. Knowledge Injection (LoRA Training)
+### 1. LoRA Training
 Fine-tune the backbone MLLM (Qwen-VL) on the training set:
 ```bash
 python train_lora.py
 ```
 
-### 3. Hallucination-Free Inference
+### 2. Hallucination-Free Inference
 Execute the RECIPE framework on the test set to generate recipes and evaluate performance:
 ```bash
 python main.py
@@ -91,7 +86,7 @@ If you use Recipe or the C2MR dataset in your research, please cite:
 @inproceedings{recipe2026,
   title={Closing the Visual-Culinary Gap: Towards Hallucination-Free Recipe Generation with Entropy-Aware Logic Constraints},
   author={Anonymous Author(s)},
-  booktitle={Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI)},
+  booktitle={Proceedings of the 34th ACM International Conference on Multimedia (ACM MM)},
   year={2026}
 }
 ```
