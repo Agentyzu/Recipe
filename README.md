@@ -31,7 +31,7 @@ This repository contains the official implementation of the paper **"Closing the
 ├── src/                            # Core source code
 │   ├── data_loader.py              # High-fidelity data parsing and ingredient cleaning
 │   ├── retrieval.py                # Cross-modal retrieval using Chinese-CLIP-ViT-L/14
-│   ├── rag_physic_cot.py           # Uncertainty quantification and Logits Masking logic
+│   ├── recipe.py           # Uncertainty quantification and Logits Masking logic
 │   └── evaluation.py               # Corpus-level evaluation (BLEU, CIDEr, CHAIR_i)
 ├── train_lora.py                   # Training the expert model
 ├── main.py                         # Inference Pipeline: Running the Recipe framework
