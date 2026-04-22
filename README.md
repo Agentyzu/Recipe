@@ -53,7 +53,6 @@ The implementation is optimized for **NVIDIA RTX 4090 / A100 GPUs** running **Ub
     ```
 
 2. **Setup Metrics Dependency**
-    Due to network constraints in certain regions, use our helper to setup NLTK WordNet:
     ```bash
     python download_wordnet.py
     ```
