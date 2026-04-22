@@ -87,7 +87,7 @@ python main.py
 
 ## 🖋️ Citation
 
-If you use Rᴇᴄɪᴘ or the C2MR dataset in your research, please cite:
+If you use Rᴇᴄɪᴘᴇ or the C2MR dataset in your research, please cite:
 
 ```bibtex
 @inproceedings{recipe2026,
