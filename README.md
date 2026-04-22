@@ -9,7 +9,7 @@ This repository contains the official implementation of the paper **"Closing the
 **Rᴇᴄɪᴘᴇ** (REtrieval-constrained Culinary Inference via Probabilistic Entropy) reformulates multimodal recipe generation from a probabilistic guessing task into a **verifiable logical reasoning** task. By quantifying epistemic uncertainty (entropy) via stochastic sampling, Rᴇᴄɪᴘᴇ effectively identifies and excises bias-driven "stubborn hallucinations."
 
 <div align="center">
- <img src="Recipe_framework.png" alt="Recipe Architecture" width="800"/>
+ <img src="recipe_framework.png" alt="Recipe Architecture" width="800"/>
 </div>
 
 ### Key Features
@@ -23,20 +23,23 @@ This repository contains the official implementation of the paper **"Closing the
 ```text
 .
 ├── data/                           # Dataset directory
-│   ├── C2MR.json                   # Expert-vetted set (32072, pairs)
-│   ├── C2MR_train.json             # Training set
-│   ├── C2MR_val.json               # Validation set for LoRA monitoring
-│   └── C2MR_test.json              # Test set for zero-hallucination evaluation
+│   ├── input/                      # Preprocessed datasets ready for training/testing
+│   │   ├── C2MR.json               # Expert-vetted set (32,072 pairs)
+│   │   ├── C2MR_train.json         # Training set
+│   │   ├── C2MR_val.json           # Validation set for LoRA monitoring
+│   │   └── C2MR_test.json          # Test set for zero-hallucination evaluation
+│   ├── output/                     # Model outputs and evaluation logs
+│   └── source/                     # Raw source datasets
 ├── image_cache/                    # Cached images downloaded from URLs
 ├── src/                            # Core source code
 │   ├── data_loader.py              # High-fidelity data parsing and ingredient cleaning
 │   ├── retrieval.py                # Cross-modal retrieval using Chinese-CLIP-ViT-L/14
-│   ├── rag_physic_cot.py           # Uncertainty quantification and Logits Masking logic
-│   └── evaluation.py               # Corpus-level evaluation (BLEU, CIDEr, CHAIR_i)
-├── train_lora.py                   # Training the expert model
-├── main.py                         # Inference Pipeline: Running the Recipe framework
+│   ├── recipe.py                   # Uncertainty quantification and Logits Masking logic
+│   ├── evaluation.py               # Corpus-level evaluation (BLEU, CIDEr, CHAIR_i)
+│   ├── train_lora.py               # Training the expert model
+│   └── main.py                     # Inference Pipeline: Running the Recipe framework
 ├── download_qwen                   # download qwen model to local
-├── download_wordnet.py             # Helper to setup METEOR dependencies (Domestic Mirror)
+├── download_wordnet.py             # Helper to setup METEOR dependencies
 └── requirements.txt                # Python dependencies
 ```
 
@@ -53,9 +56,13 @@ The implementation is optimized for **NVIDIA RTX 4090 / A100 GPUs** running **Ub
     ```
 
 2. **Setup Metrics Dependency**
-    Due to network constraints in certain regions, use our helper to setup NLTK WordNet:
     ```bash
     python download_wordnet.py
+    ```
+
+3. **Download Qwen Model**
+    ```bash
+    python download_qwen.py
     ```
 
 ## 🚀 Usage
