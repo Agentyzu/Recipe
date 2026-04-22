@@ -34,7 +34,7 @@ This repository contains the official implementation of the paper **"Closing the
 │   └── evaluation.py               # Corpus-level evaluation (BLEU, CIDEr, CHAIR_i)
 ├── train_lora.py                   # Knowledge Injection: Training the LoRA expert model
 ├── main.py                         # Inference Pipeline: Running the Recipe framework
-├── split_dataset.py                # Tool for Train/Val/Test data partitioning
+├── download_qwen                   # download qwen model to local
 ├── download_wordnet.py             # Helper to setup METEOR dependencies (Domestic Mirror)
 └── requirements.txt                # Python dependencies
 ```
