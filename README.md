@@ -32,9 +32,9 @@ This repository contains the official implementation of the paper **"Closing the
 │   ├── data_loader.py              # High-fidelity data parsing and ingredient cleaning
 │   ├── retrieval.py                # Cross-modal retrieval using Chinese-CLIP-ViT-L/14
 │   ├── recipe.py                   # Uncertainty quantification and Logits Masking logic
-│   └── evaluation.py               # Corpus-level evaluation (BLEU, CIDEr, CHAIR_i)
-├── train_lora.py                   # Training the expert model
-├── main.py                         # Inference Pipeline: Running the Recipe framework
+│   ├── evaluation.py               # Corpus-level evaluation (BLEU, CIDEr, CHAIR_i)
+│   ├── train_lora.py               # Training the expert model
+│   └── main.py                     # Inference Pipeline: Running the Recipe framework
 ├── download_qwen                   # download qwen model to local
 ├── download_wordnet.py             # Helper to setup METEOR dependencies
 └── requirements.txt                # Python dependencies
