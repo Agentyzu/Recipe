@@ -57,6 +57,11 @@ The implementation is optimized for **NVIDIA RTX 4090 / A100 GPUs** running **Ub
     python download_wordnet.py
     ```
 
+3. **Download Qwen Model**
+    ```bash
+    python download_qwen.py
+    ```
+
 ## 🚀 Usage
 
 ### 1. Expert Model Training
