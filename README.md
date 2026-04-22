@@ -36,7 +36,7 @@ This repository contains the official implementation of the paper **"Closing the
 ├── train_lora.py                   # Training the expert model
 ├── main.py                         # Inference Pipeline: Running the Recipe framework
 ├── download_qwen                   # download qwen model to local
-├── download_wordnet.py             # Helper to setup METEOR dependencies (Domestic Mirror)
+├── download_wordnet.py             # Helper to setup METEOR dependencies
 └── requirements.txt                # Python dependencies
 ```
 
