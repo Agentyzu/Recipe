@@ -33,7 +33,7 @@ This repository contains the official implementation of the paper **"Closing the
 │   ├── retrieval.py                # Cross-modal retrieval using Chinese-CLIP-ViT-L/14
 │   ├── rag_physic_cot.py           # Uncertainty quantification and Logits Masking logic
 │   └── evaluation.py               # Corpus-level evaluation (BLEU, CIDEr, CHAIR_i)
-├── train_lora.py                   # Knowledge Injection: Training the LoRA expert model
+├── train_lora.py                   # Training the expert model
 ├── main.py                         # Inference Pipeline: Running the Recipe framework
 ├── download_qwen                   # download qwen model to local
 ├── download_wordnet.py             # Helper to setup METEOR dependencies (Domestic Mirror)
@@ -60,7 +60,7 @@ The implementation is optimized for **NVIDIA RTX 4090 / A100 GPUs** running **Ub
 
 ## 🚀 Usage
 
-### 1. LoRA Training
+### 1. Expert Model Training
 Fine-tune the backbone MLLM (Qwen-VL) on the training set:
 ```bash
 python train_lora.py
