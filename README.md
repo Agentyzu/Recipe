@@ -23,7 +23,8 @@ This repository contains the official implementation of the paper **"Closing the
 ```text
 .
 ├── data/                           # Dataset directory
-│   ├── C2MR_train.json             # Expert-vetted Training set (25,657 pairs)
+│   ├── C2MR.json                   # Expert-vetted set (32072, pairs)
+│   ├── C2MR_train.json             # Training set
 │   ├── C2MR_val.json               # Validation set for LoRA monitoring
 │   └── C2MR_test.json              # Test set for zero-hallucination evaluation
 ├── image_cache/                    # Cached images downloaded from URLs
