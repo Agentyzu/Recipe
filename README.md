@@ -86,7 +86,7 @@ If you use Recipe or the C2MR dataset in your research, please cite:
 @inproceedings{recipe2026,
   title={Closing the Visual-Culinary Gap: Towards Hallucination-Free Recipe Generation with Entropy-Aware Logic Constraints},
   author={Anonymous Author(s)},
-  booktitle={Proceedings of the 35th International Joint Conference on Artificial Intelligence (IJCAI)},
+  booktitle={Proceedings of the 34th ACM International Conference on Multimedia (ACM MM)},
   year={2026}
 }
 ```
