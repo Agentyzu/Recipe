@@ -14,7 +14,7 @@ class C2MRDataset:
     :param json_path: Path to the dataset JSON file.
     :param image_cache_dir: Directory to store downloaded recipe images locally.
     """
-    def __init__(self, json_path="data/C2MR.json", image_cache_dir="./image_cache"):
+    def __init__(self, json_path="../data/input/C2MR.json", image_cache_dir="../image_cache"):
         if not os.path.exists(json_path):
             raise FileNotFoundError(f"JSON file not found: {json_path}")
             
