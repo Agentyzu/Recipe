@@ -1,0 +1,40 @@
+# Deep Learning Core
+torch>=2.1.1
+torchvision>=0.16.1
+transformers>=4.32.0
+accelerate>=0.21.0
+peft>=0.10.0
+bitsandbytes>=0.42.0
+qwen-vl-utils
+sentencepiece
+huggingface_hub
+modelscope
+Pillow
+
+# Data Science & Math
+pandas
+numpy<2.0.0
+scikit-learn
+scipy
+pathlib
+faiss-gpu
+
+# Networking
+openai
+requests
+urllib3
+
+# Web Tools & Scraping
+selenium
+beautifulsoup4
+
+# NLP Evaluation & Alignment
+nltk
+rouge-score
+pycocoevalcap
+cn_clip
+rapidfuzz
+tqdm
+
+# Utilities
+python-dotenv
