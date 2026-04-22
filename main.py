@@ -7,7 +7,7 @@ from peft import PeftModel
 
 from data_loader import C2MRDataset
 from retrieval import CrossModalRetriever
-from Recipe import RAGPhysicCoT, IngredientConstraintLogitsProcessor
+from recipe import RAGPhysicCoT, IngredientConstraintLogitsProcessor
 from evaluation import RQ1Evaluator
 
 import warnings
