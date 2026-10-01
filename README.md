@@ -97,3 +97,7 @@ If you use Rᴇᴄɪᴘᴇ or the C2MR dataset in your research, please cite:
   year={2026}
 }
 ```
+
+## 📦 Dataset Availability
+
+*   **C2MR Dataset:** The C2MR dataset is currently not publicly available due to copyright and licensing restrictions associated with data sourced from **Dianping** and **Xiachufang**. We have therefore removed the dataset from this repository and are exploring appropriate ways to support future access while respecting the relevant copyright requirements.
